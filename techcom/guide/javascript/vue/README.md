@@ -1,7 +1,7 @@
 # Vue Guides
 
-- [Learning Vue.js](/guide/javascript/vue/learning-vuejs/)
 - [Getting to Know Vue js](/guide/javascript/vue/getting-to-know-vuejs/)
+- [Learning Vue.js](/guide/javascript/vue/learning-vuejs/)
 - [The Majesty of Vue.js](/guide/javascript/vue/the-majesty-of-vuejs/)
 - [Vue js Up and Running](/guide/javascript/vue/vuejs-up-and-running/)
 - [Vuepressbook](/guide/javascript/vue/vuepressbook/)

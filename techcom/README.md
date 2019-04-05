@@ -1,9 +1,9 @@
 ---
 home: true
-heroText: TechCom
 heroImage: /img/springfield-dim-sum-800px.png
+heroText: TechCom
 tagline: Technical Communication
-actionText: Menu →
+actionText: Menu →→
 actionLink: /menu.md
 features:
   - title: Coding Problem
@@ -14,6 +14,7 @@ features:
     details: Interview questions all about programming languages.
   - title: Reference Card
     details: Cheatsheets
+footer: MIT Licensed | Copyright © 2019-present Peter Bone
 ---
 
 # Content

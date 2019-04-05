@@ -21,21 +21,27 @@ module.exports = {
     },
     toc: {
       includeLevel: [1, 2, 3, 4]
-    }
+    },
+    lineNumbers: true
   },
-  // themeConfig: {
-  //   nav: [{
-  //       text: 'Home',
-  //       link: '/'
-  //     },
-  //     {
-  //       text: 'Guide',
-  //       link: '/guide/'
-  //     },
-  //     {
-  //       text: 'External',
-  //       link: 'https://google.com'
-  //     },
-  //   ]
-  // }
+  themeConfig: {
+    sidebar: [
+      '/',
+      '/page-a',
+      ['/page-b', 'Explicit link text']
+    ],
+    nav: [{
+        text: 'Menu',
+        link: '/menu.md'
+      },
+      {
+        text: 'Guide',
+        link: '/guide/'
+      },
+      {
+        text: 'External',
+        link: 'https://google.com'
+      },
+    ]
+  }
 }
