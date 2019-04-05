@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "docs:dev": "vuepress dev techcom",
+    "docs:build": "vuepress build techcom"
+  },
+  "name": "peteroncode.me_techcom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "techcom"
+  },
+  "devDependencies": {
+    "vuepress": "^1.0.0-alpha.44",
+    "yarn": "^1.15.2"
+  },
+  "author": "Peter Bone",
+  "license": "ISC",
+  "description": ""
+}
