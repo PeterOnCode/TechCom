@@ -1,27 +1,39 @@
 ---
-title: Peter on Code
-lang: en-US
-meta:
-  - name: description
-    content: hello
-  - name: keywords
-    content: super duper SEO
+home: true
+heroText: TechCom
+heroImage: /img/springfield-dim-sum-800px.png
+tagline: Technical Communication
+actionText: Menu →
+actionLink: /menu.md
+features:
+  - title: Coding Problem
+    details: Coding Problem, Data structures and algorithms
+  - title: Guide
+    details: Exhibits and explains points of interest
+  - title: Interview Question
+    details: Interview questions all about programming languages.
+  - title: Reference Card
+    details: Cheatsheets
 ---
- 
-# Peter On Code
+
+# Content
 
 - <https://vuepress.vuejs.org/guide/markdown.html#internal-links>
 
-## Sitemap
+## The Technical Stuff
+
+### [Coding Problem](/coding-problem/)
+
+Coding Problem, Data structures and algorithms
+
+### [Guide](/guide/)
+
+Exhibits and explains points of interest
 
 ### [Interview Questions](/interview-question/)
 
 Interview questions all about programming languages.
 
-### [Cheatsheets](/cheatsheets/)
+### [Reference Card](/reference-card/)
 
-### [Coding Problem](/coding-problem/)
-
-Each sub-directory in your static site should contain a `README.md`.
-
-It will automatically be converted to `index.html`
+Cheatsheets

@@ -1,1 +1,7 @@
-Hello Guide
+# Guides
+
+[[toc]]
+
+## Javascript
+
+[Menu](/menu/)

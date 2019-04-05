@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "docs:dev": "vuepress dev techcom",
-    "docs:build": "vuepress build techcom"
+    "techcom:dev": "vuepress dev techcom",
+    "techcom:build": "vuepress build techcom"
   },
   "name": "peteroncode.me_techcom",
   "version": "1.0.0",
