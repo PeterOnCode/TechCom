@@ -23,18 +23,20 @@ footer: MIT Licensed | Copyright © 2019-present Peter Bone
 
 ## The Technical Stuff
 
-### [Coding Problem](/coding-problem/)
+### :1234: [Coding Problem](/coding-problem/)
 
 Coding Problem, Data structures and algorithms
 
-### [Guide](/guide/)
+### :books: [Guide](/guide/)
 
 Exhibits and explains points of interest
 
-### [Interview Questions](/interview-question/)
+### :grey_question: [Interview Questions](/interview-question/)
 
 Interview questions all about programming languages.
 
-### [Reference Card](/reference-card/)
+### :card_index: [Reference Card](/reference-card/)
 
 Cheatsheets
+
+### Emojis

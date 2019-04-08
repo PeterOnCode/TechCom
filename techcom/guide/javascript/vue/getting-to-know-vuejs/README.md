@@ -23,6 +23,10 @@ Passionate about continuous improvement through learning, sharing with others, a
 1. [State of Vue.js](https://cdn2.hubspot.net/hubfs/1667658/State_of_vue/State%20of%20Vue.js%20report%202017%20by%20Monterail.pdf?t=1509106564387)
 1. [Adding Vue.js to Your Technology Stack](https://www.monterail.com/vuejs-development-guide)
 
+### Locale
+
+1. [Adding Vue.js to Your Technology Stack](/post/vuejs-development-guide.md)
+
 ## Chapter 01 - Why Vue.js?
 
 Take a look at the value that Vue.js brings to development and create our first app with Vue.
@@ -33,7 +37,7 @@ Vue.js is called a _progressive framework_.
 
 It allows you to start building your app with minimal effort as **the core Vue.js library focuses only on the view layer**.
 
---- 
+---
 
 Over time as the requirements grow, you can adapt additional libraries for functionality.
 
