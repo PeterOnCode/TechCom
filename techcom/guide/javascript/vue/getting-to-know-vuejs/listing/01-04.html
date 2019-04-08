@@ -1,0 +1,26 @@
+<!--  Listing 1-4. Our First Vue App! -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <!-- Div to Mount App -->
+  <div id="app">
+    {{ propertyName }}
+  </div>
+
+  <!-- Reference to Vue.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <!-- Script Element for our first App -->
+  <script>
+    var app = new Vue({
+      el:'#app',
+      data: {
+        propertyName: 'Hello World!'
+      }
+    })
+  </script>
+</body>
+
+</html>

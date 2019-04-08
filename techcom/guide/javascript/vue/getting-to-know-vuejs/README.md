@@ -2,6 +2,8 @@
 
 <https://drive.google.com/open?id=1r4Cn6S3zAnO9bszJ4Xvk0r6gGdqHCMH8>
 
+---
+
 ### Author
 
 Brett Nelson
@@ -13,6 +15,8 @@ Brett Nelson
 Passionate about continuous improvement through learning, sharing with others, and collaboration amongst the geek society.
 
 [[toc]]
+
+---
 
 ### Reources
 
@@ -29,7 +33,11 @@ Vue.js is called a _progressive framework_.
 
 It allows you to start building your app with minimal effort as **the core Vue.js library focuses only on the view layer**.
 
+--- 
+
 Over time as the requirements grow, you can adapt additional libraries for functionality.
+
+### Our First Vue.js Instance
 
 > _Listing 01-01_ - Empty HTML file
 
@@ -66,11 +74,13 @@ _mustache syntax_: It consists of two curly braces surrounding the property name
 
 ---
 
-dd
+> [_Listing 01-04_ - Our First Vue App!](https://codepen.io/peteroncode/pen/bJwyPz)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/01-04.html
 
 ---
 
-### Our First Vue.js Instance
+
 
 ### Developer Tools
 
