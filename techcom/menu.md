@@ -11,3 +11,6 @@
       - [Vuepressbook](/guide/javascript/vue/vuepressbook/)
 - [Interview Question](/interview-question/)
 - [Reference Card](/reference-card/)
+- [Tutorial](/tutorial/)
+  - [Web Development](/tutorial/web-development/)
+    - [Javascript](/tutorial/web-development/javascript/)
