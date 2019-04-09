@@ -4,6 +4,8 @@
 ## Articles
 
 - [Vue.js Development Guide](/post/vuejs-development-guide.md)
+- [Vue Templating Tutorial - Interpolation and Directives](https://coursetro.com/posts/code/135/Vue-Templating-Tutorial---Interpolation-and-Directives)
+- [youtube - The Vue Tutorial for 2018 - Learn Vue 2 in 65 Minutes](https://www.youtube.com/watch?v=78tNYZUS-ps)
 ## Features
 
 
