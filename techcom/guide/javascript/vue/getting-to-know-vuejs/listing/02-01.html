@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=1024, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Listing - 02-01 :: Mounting Vue with a CSS Selector</title>
+</head>
+
+<body>
+
+  <div id="app">
+    {{propertyName}}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        propertyName: 'Hello from Getting to Know Vue.js! This was mounted by passing in an CSS Selector'
+      }
+    })
+  </script>
+</body>
+
+</html>

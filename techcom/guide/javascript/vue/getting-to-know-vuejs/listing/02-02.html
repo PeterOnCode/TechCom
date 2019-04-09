@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=1024, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible"
+        content="ie=edge">
+  <title>Listing - 02-02 :: Mounting Vue with an HTMLElement</title>
+</head>
+
+<body>
+
+  <div id="app">
+    {{propertyName}}
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+  <script>
+    var element = document.getElementById('app')
+    var app = new Vue({
+      el: element,
+      data: {
+        propertyName: 'Hello from Getting to Know Vue.js! This was mounted by passing in an CSS Selector'
+      }
+    })
+  </script>
+</body>
+
+</html>

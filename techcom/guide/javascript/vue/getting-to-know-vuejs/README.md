@@ -102,5 +102,25 @@ browser-sync -w
 
 ## Chapter 02 - The Basics
 
+### Vue Options
 
+### El
+
+The `el` property allows us to specify where our Vue instance will mount
+on the page. The value you provide can be a string that is a CSS selector.
+
+> [_Listing 02-01_ - Mounting Vue with a CSS Selector](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-01.html
+
+> [_Listing 02-02_ - Mounting Vue with an HTMLElement](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-02.html
 [<- Menu](/menu/)
+
+When Vue is mounted to the HTML element that is provided, it replaces it with the Vue created DOM. The Vue DOM will contain the HTML that we provide as the template or the contents produced from the render function we provide.
+
+If `template` and `render` are not provided, the HTML on the element that was
+provided as the mounting point will be used as the template for Vue to render the DOM.
+
+### Template
