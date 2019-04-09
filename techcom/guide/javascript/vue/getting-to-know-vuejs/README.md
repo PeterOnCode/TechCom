@@ -84,14 +84,23 @@ _mustache syntax_: It consists of two curly braces surrounding the property name
 
 ---
 
-
-
 ### Developer Tools
 
-#### Browser Dev Tools
+- <https://github.com/vuejs/vue-devtools>
+- <https://www.browsersync.io/> or loading files during local
+development.
 
-#### Browsersync
+```bash
+npm init
+npm install --save-dev browser-sync
+#
+browser-sync -w
+```
 
 ### Summary
+
+
+## Chapter 02 - The Basics
+
 
 [<- Menu](/menu/)
