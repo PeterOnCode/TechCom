@@ -164,7 +164,19 @@ If you do include a property that starts with a `$` or `_`, you can access it on
 
 When an instance of Vue is created, the `data` object originally included is added to the instance as a property with the name `$data`. So, _if you assign your Vue instance to a variable called `app`_, you can access the original data object at `app.$data.propertyName`. You will also be able to access it in methods using the this context instead of through a saved reference to the `this.$data.propertyName` instance.
 
+### Methods
 
+Using methods, we can create custom code that will be bound to our instance of Vue.
+
+> [_Listing 02-09_ - Method Declaration Example](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-09.html
+
+When creating methods for our Vue instance, we need to avoid using the _arrow function_ `()=>{}`, as it will prevent us from being able to access the proper context of `this`.
+
+  > [_Listing 02-10_ - Binding a Method in the HTML](https://codepen.io/peteroncode/pen/)
+
+  <<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-10.html
 
 
 [<- Menu](/menu/)
