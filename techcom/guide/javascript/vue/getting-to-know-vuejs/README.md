@@ -130,4 +130,12 @@ The `template` string is used by Vue to generate the DOM it will be placing in t
 
 <<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-04.html
 
+### Render
+
+The `render` function is a way to programmatically create templates in JavaScript.
+
+The `render` function takes priority over templates and HTML templates.
+
+### Data
+
 [<- Menu](/menu/)
