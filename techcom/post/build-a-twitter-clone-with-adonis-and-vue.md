@@ -96,3 +96,25 @@ DB_PASSWORD=adonis
 DB_DATABASE=adonis
 HASH_DRIVER=bcrypt
 ```
+## User Model and Migration
+
+```javascript
+// database/migrations/TIMESTAMP_user.js
+up() {
+    this.create('users', (table) => {
+      table.increments()
+      table.string('name').notNullable()
+      table.string('username', 80).notNullable().unique()
+      table.string('email', 254).notNullable().unique()
+      table.string('password', 60).notNullable()
+      table.string('location').nullable()
+      table.string('website_url').nullable()
+      table.text('bio').nullable()
+      table.timestamps()
+    })
+  }
+```
+
+```bash
+adonis migration:run
+```
