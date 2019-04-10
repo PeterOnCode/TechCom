@@ -143,3 +143,27 @@ class TweetSchema extends Schema {
 ```bash
 adonis migration:run
 ```
+
+## Reply Model and Migration
+
+```bash
+adonis make:model Reply -m
+```
+
+```js
+// database/migrations/TIMESTAMP_reply_schema.js
+
+up () {
+    this.create('replies', (table) => {
+        table.increments()
+        table.integer('user_id').unsigned().notNullable()
+        table.integer('tweet_id').unsigned().notNullable()
+        table.text('reply').notNullable()
+        table.timestamps()
+    })
+}
+```
+
+```bash
+adonis migration:run
+```
