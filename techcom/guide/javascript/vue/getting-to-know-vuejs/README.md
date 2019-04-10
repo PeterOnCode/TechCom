@@ -178,5 +178,8 @@ When creating methods for our Vue instance, we need to avoid using the _arrow fu
 
   <<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-10.html
 
+## Computed Properties
+
+_Computed properties_ look very _similar to methods_, with one major difference — __the results are cached__. The values are updated only when the values that the computed property is based on change. 
 
 [<- Menu](/menu/)
