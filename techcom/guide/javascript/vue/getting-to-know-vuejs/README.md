@@ -116,7 +116,6 @@ on the page. The value you provide can be a string that is a CSS selector.
 > [_Listing 02-02_ - Mounting Vue with an HTMLElement](https://codepen.io/peteroncode/pen/)
 
 <<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-02.html
-[<- Menu](/menu/)
 
 When Vue is mounted to the HTML element that is provided, it replaces it with the Vue created DOM. The Vue DOM will contain the HTML that we provide as the template or the contents produced from the render function we provide.
 
@@ -124,3 +123,11 @@ If `template` and `render` are not provided, the HTML on the element that was
 provided as the mounting point will be used as the template for Vue to render the DOM.
 
 ### Template
+
+The `template` string is used by Vue to generate the DOM it will be placing in the web page in place of the element that was selected with the `el` option. __It must have one root element__. This will replace anything that is inside the element that the instance of Vue gets mounted to.
+
+> [_Listing 02-04_ - Vue App with a Template](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-04.html
+
+[<- Menu](/menu/)
