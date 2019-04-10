@@ -138,4 +138,33 @@ The `render` function takes priority over templates and HTML templates.
 
 ### Data
 
+We use the `data` property to tell our instance what shape our data will resemble.
+
+If there is something we want to be able to bind to in our Vue instance, we need to include it in the `data` before we create our Vue instance.
+
+When a new instance of Vue is created, _it adds all the properties of data to a reactive system_. __The Vue reactive system monitors the properties of the data object for changes and updates the view to “react” to those changes__.
+
+We cannot add new data to be monitored by Vue’s reactive system after
+the application starts. At the time you don’t know what the values of your `data` properties will be, define them with the names and give them a
+value of an _empty string_, _`null`_, or _`undefined`_.
+
+> [_Listing 02-07_ - HTML with emptyObject, emptyString, and nullProperty](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-07.html
+
+Names of the properties of the data object _must not start with_ `$` or `_`.
+
+ Any properties that start with `$` or `_` will not be added to the reactive system, as they might cause conflicts with Vue’s internal properties and methods. Since they won’t be added to the reactive system, they also can’t be accessed in the template.
+
+ > [_Listing 02-08_ - Trying to Use Data Properties That Start with `$` or `_`](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-08.html
+
+If you do include a property that starts with a `$` or `_`, you can access it on your instance of Vue from the $data property.
+
+When an instance of Vue is created, the `data` object originally included is added to the instance as a property with the name `$data`. So, _if you assign your Vue instance to a variable called `app`_, you can access the original data object at `app.$data.propertyName`. You will also be able to access it in methods using the this context instead of through a saved reference to the `this.$data.propertyName` instance.
+
+
+
+
 [<- Menu](/menu/)
