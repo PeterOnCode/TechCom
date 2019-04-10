@@ -118,3 +118,28 @@ up() {
 ```bash
 adonis migration:run
 ```
+
+## Tweet Model and Migration
+
+```bash
+adonis make:model Tweet -m
+```
+
+```javascript
+// ...
+class TweetSchema extends Schema {
+  up() {
+    this.create('tweets', (table) => {
+      table.increments()
+      table.integer('user_id').unsigned().notNullable()
+      table.text('tweet').notNullable()
+      table.timestamps()
+    })
+  }
+  // ...
+}
+```
+
+```bash
+adonis migration:run
+```
