@@ -71,3 +71,28 @@ The package comes with a configuration file which is located in `config/cors.js`
   */
   methods: ['GET', 'PUT', 'POST', 'DELETE'],
 ```
+## Database setup
+
+```bash
+npm install mysql --save
+```
+
+1. Look at `config/database.js`.
+1. Open `.env` and update the DB details
+
+```text
+HOST=127.0.0.1
+PORT=3333
+NODE_ENV=development
+APP_NAME=AdonisJs
+APP_URL=http://${HOST}:${PORT}
+CACHE_VIEWS=false
+APP_KEY=GQyg7fMX2tjcPiK5pzxyoyzwA6K9UOT7
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_USER=adonis
+DB_PASSWORD=adonis
+DB_DATABASE=adonis
+HASH_DRIVER=bcrypt
+```
