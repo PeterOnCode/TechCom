@@ -180,6 +180,20 @@ When creating methods for our Vue instance, we need to avoid using the _arrow fu
 
 ## Computed Properties
 
-_Computed properties_ look very _similar to methods_, with one major difference — __the results are cached__. The values are updated only when the values that the computed property is based on change. 
+_Computed properties_ look very _similar to methods_, with one major difference — __the results are cached__. The values are updated only when the values that the computed property is based on change.
+
+> [_Listing 02-11_ - Computed Property](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-11.html
+
+## Template Binding
+
+The basic template syntax for Vue we use _mustache syntax_ to bind a property inside of HTML. Mustache syntax is the use of two curly braces surrounding your property, such as &#123;&#123;`propertyName`&#125;&#125;.
+
+In the binding, you can also execute a JavaScript expression.
+
+> [_Listing 02-12_ - JavaScript Expressions in Bindings](https://codepen.io/peteroncode/pen/)
+
+<<< @/techcom/guide/javascript/vue/getting-to-know-vuejs/listing/02-12.html
 
 [<- Menu](/menu/)

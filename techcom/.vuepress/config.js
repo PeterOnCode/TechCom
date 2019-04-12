@@ -17,7 +17,7 @@ module.exports = {
     anchor: {
       permalink: true,
       permalinkBefore: true,
-      permalinkSymbol: '#'
+      permalinkSymbol: '&rarr;'
     },
     toc: {
       includeLevel: [1, 2, 3, 4]
