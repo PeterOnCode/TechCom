@@ -26,9 +26,13 @@ module.exports = {
   },
   themeConfig: {
     sidebar: [
-      '/',
-      '/page-a',
-      ['/page-b', 'Explicit link text']
+      ['/','[Home]'],
+      ['/documentation/','Documentation'],
+      ['/guide/', 'Guide'],
+      ['/interview-question/', 'Interview Question'],
+      ['/post/', 'Post'],
+      ['/reference-card/', 'Reference Card'],
+      ['/tutorial/', 'Tutorial'],
     ],
     nav: [{
         text: 'Menu',
