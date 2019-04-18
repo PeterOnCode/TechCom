@@ -1,7 +1,22 @@
-# Nest.js Documentation
+---
+title: Nest.js Documentation
+lang: en-US
+meta:
+  - name: description
+    content: nest, javascript
+  - name: keywords
+    content: Javascript, nest
+---
+
+`<techcom-breadcrumbs page=$page>`
+
+# {{ $page.title }}
 
 
 [[toc]]
+`<techcom-toc page='$page'>`
+
+
 
 ## Resources
 
@@ -10,6 +25,7 @@
 - Website: <https://nestjs.com>
 - Twitter: [@nestframework](https://twitter.com/nestframework)
 - Article - [Exploring EcmaScript Decorators](https://medium.com/google-developers/exploring-es7-decorators-76ecb65fb841)
+- <https://github.com/markdown-it/markdown-it-emoji/blob/master/lib/data/full.json>
 
 
 ## Introduction
@@ -63,6 +79,8 @@ npm i --save @nestjs/core @nestjs/common rxjs reflect-metadata
 
 ## Overview
 
+`<techcom-toc>`
+
 ### First steps
 
 1. `main.ts` : The entry file of the application. It uses `NestFactory` to create the Nest application instance.
@@ -76,6 +94,8 @@ npm i --save @nestjs/core @nestjs/common rxjs reflect-metadata
 The `create()` method returns an object, which fulfills the INestApplication interface, and provides a set of usable methods
 
 ### Controllers
+
+`<techcom-toc>`
 
 Controllers are responsible for:
 -  handling incoming requests and
@@ -198,12 +218,12 @@ export class CatsController {
 ---
 
  Endpoint decorators in the same fashion:
- - @Put(),
- - @Delete(),
- - @Patch(),
- - @Options(),
- - @Head(), and
- - @All().
+ - `@Put()`,
+ - `@Delete()`,
+ - `@Patch()`,
+ - `@Options()`,
+ - `@Head()`,
+ - `@All()`.
 
  All of them represent respective HTTP request methods.
 
@@ -247,22 +267,156 @@ To specify a __custom response header__, you can either use:
 -  a `@Header()` decorator or
 - a library-specific response object.
 
+[List of HTTP header fields](https://en.wikipedia.org/wiki/List_of_HTTP_header_fields)
+
+> Request:
+
+```bash
+curl -X POST -H 'Content-Type: application/json' -i http://localhost:3000/cats/ --data '{"user":{"name":"john"}}'
+```
+
+> Controller
+
+```javascript
+@Post('/')
+@Header('Cache-Control', 'none')
+create(@Body() body): string {
+  return `Body:  ${body.user.name}`
+}
+```
+
+> Response:
+
+```bash
+X-Powered-By: Express
+Cache-Control: none
+Content-Type: text/html; charset=utf-8
+Content-Length: 11
+ETag: W/"b-Nh2RQ5I8jb/49L9v+Lchm0k2aH4"
+Date: Wed, 17 Apr 2019 10:33:07 GMT
+Connection: keep-alive
+
+Body:  john
+
+```
+
 #### Route parameters
+
+
+Accept dynamic data as part of the request.
+
+We can add __route parameter tokens__ in the path of the route to capture the dynamic value at that position in the request URL.
+
+Route parameters declared in this way can be accessed using the `@Param()` decorator, which should be added to the method signature.
+
+```JavaScript
+@Get('/:id')
+findOne(@Param() params) {
+  console.log(params.id);
+  return `This action returns a #${params.id} puli`;
+}
+```
 
 ```JavaScript
 @Get(':id')
-findOne(@Param() params) {
-  console.log(params.id);
-  return `This action returns a #${params.id} cat`;
+findOne(@Param('id') id): string {
+  return `This action returns a #${id} puli`;
+}
+```
+
+#### Routes order
+
+Route registration order (the order each route's method appears in a class) matters.
+
+#### Scopes
+
+ In Nest, almost everything is shared across incoming requests.
+
+ Node.js doesn't follow the _request/response_ __Multi-Threaded Stateless Model__ in which every request is processed by a separate thread. Hence, using singleton instances is fully safe for our applications.
+
+#### Asynchronicity
+
+<https://kamilmysliwiec.com/typescript-2-1-introduction-async-await>
+
+Every async function has to return a `Promise`. This means that you can return a deferred value that Nest will be able to resolve by itself.
+
+```javascript
+@Get('/promise')
+async findAllPromise(): Promise<any[]> {
+  return ['puli']
+}
+```
+
+<http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html>
+
+#### Request payloads
+
+ We need to determine the __DTO (Data Transfer Object)__ schema.
+
+ A DTO is an object that defines how the data will be sent over the network.
+
+ We could determine the DTO schema by using TypeScript interfaces, or by simple classes.
+
+`CreatePuliDto` class:
+
+```js
+export class CreateCatDto {
+  readonly name: string;
+  readonly age: number;
+  readonly breed: string;
 }
 ```
 
 ```javascript
-@Get(':id')
-findOne(@Param('id') id) {
-  return `This action returns a #${id} cat`;
+@Post('/createPuli')
+ async createPuli(@Body() puli: CreatePuliDto) {
+   // async createPuli(@Req() req) {
+   return 'This action adds a new puli: ' + puli.age
+ }
+ ```
+
+ #### Handling errors
+
+ >>>>>>>>>>>>>>>> Exception filters
+
+#### Full resource sample
+
+```js
+import { Controller, Get, Post, Res, HttpStatus } from '@nestjs/common';
+import { Response } from 'express';
+
+@Controller('cats')
+export class CatsController {
+  @Post()
+  create(@Res() res: Response) {
+    res.status(HttpStatus.CREATED).send();
+  }
+
+  @Get()
+  findAll(@Res() res: Response) {
+     res.status(HttpStatus.OK).json([]);
+  }
 }
 ```
+
+### Providers
+
+<https://docs.nestjs.com/providers>
+
+### Modules
+
+### Middleware
+
+### Exception filters
+
+### Pipes
+
+### Guards
+
+### Interceptors
+
+### Custom Decorators
+
 
 ## Fundamentals
 ## Techniques
