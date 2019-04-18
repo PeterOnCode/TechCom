@@ -1,6 +1,6 @@
-Tutorial > [Web Development](/tutorial/web-development/) > [Javascript](/tutorial/web-development/javascript/)
-# Tutorial
+[Tutorial](/tutorial/) > Programming > [Java](/tutorial/programming/java/)
 
+# Programming
 [[toc]]
 
 1. [Programming](/tutorial/programming/)
