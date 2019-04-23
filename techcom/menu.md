@@ -4,6 +4,8 @@
   - [Programming](/documentation/programming/)
     - [Javascript](/documentation/programming/javascript)
       - [nest](/documentation/programming/javascript/nestjs/)
+      - [vue](/documentation/programming/javascript/vuejs/)
+        - [Guide](/documentation/programming/javascript/vuejs/guide.md)
 - [Coding Problem](/coding-problem/)
 - [Guide](/guide/)
   - [Javascript](/guide/javascript/)
