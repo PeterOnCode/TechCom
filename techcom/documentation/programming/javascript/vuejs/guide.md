@@ -22,6 +22,15 @@ meta:
 ---
 
 ## Essentials
+
+`<techcom-toc page='$page'>`
+- Installation
+  - [Direct `<script>` Include](/documentation/programming/javascript/vuejs/guide.html#direct-script-include)
+  - [NPM](/documentation/programming/javascript/vuejs/guide.html#npm)
+  - [CLI](/documentation/programming/javascript/vuejs/guide.html#cli)
+  - [Explanation of Different Builds](/documentation/programming/javascript/vuejs/guide.html#explanation-of-different-builds)
+  - [Development vs. Production Mode](/documentation/programming/javascript/vuejs/guide.html#development-vs-production-mode)
+
 ### Installation
 
  The [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools) in your browser, allowing you to inspect and debug your Vue applications in a more user-friendly interface.
@@ -70,19 +79,21 @@ $ npm install vue
 
   If you need to compile templates on the client, you will need the compiler and thus the full build.
 
-  ```javascript
-  // this requires the compiler
-  new Vue({
-    template: '<div>{{ hi }}</div>'
-  })
+> snippet 1-1 -
 
-  // this does not
-  new Vue({
-    render (h) {
-      return h('div', this.hi)
-    }
-  })
-  ```
+```javascript
+// this requires the compiler
+new Vue({
+  template: '<div>{{ hi }}</div>'
+})
+
+// this does not
+new Vue({
+  render (h) {
+    return h('div', this.hi)
+  }
+})
+```
 - __Runtime__: code that is responsible for
   - creating Vue instances,
   - rendering and patching virtual DOM,
@@ -96,16 +107,53 @@ $ npm install vue
 
 The un-minified files are for development, and the minified files are for production.
 
+---
 
 ### Introduction
+
+- [What is Vue.js?](documentation/programming/javascript/vuejs/guide.html#what-is-vue-js)
+- [Getting Started](/documentation/programming/javascript/vuejs/guide.html#getting-started)
+- [Declarative Rendering](/documentation/programming/javascript/vuejs/guide.html#declarative-rendering)
+- [Conditionals and Loops](/documentation/programming/javascript/vuejs/guide.html#conditionals-and-loops)
+- [Handling User Input](/documentation/programming/javascript/vuejs/guide.html#handling-user-input)
+- [Composing with Components](/documentation/programming/javascript/vuejs/guide.html#composing-with-components)
+  - [Relation to Custom Elements](/documentation/programming/javascript/vuejs/guide.html#relation-to-custom-elements)
+- [Ready for More?](/documentation/programming/javascript/vuejs/guide.html#ready-for-more)
+
 #### What is Vue.js?
+
+> __Vue__ (pronounced /vjuː/, like view)
+
+- Is a progressive framework for _building user interfaces_.
+- Designed from the ground up to be _incrementally adoptable_.
+- The _core library is focused on the view layer only_, and is easy to pick up and integrate with other libraries or existing projects.
+- Vue is also perfectly capable of powering sophisticated _Single-Page Applications_ when used in combination with [modern tooling](https://vuejs.org/v2/guide/single-file-components.html) and [supporting libraries](https://github.com/vuejs/awesome-vue#components--libraries).
+
+* Approachable
+* Versatile
+* Performant
+* Maintainable
+* Testable
+* Reactive
+* Progressive Framework
+
+<https://vuejs.org/v2/guide/comparison.html>
+
 #### Getting Started
+
 #### Declarative Rendering
+
+
+
 #### Conditionals and Loops
 #### Handling User Input
 #### Composing with Components
 ##### Relation to Custom Elements
 #### Ready for More?
+
+---
+
+<!-- {{$page}} -->
 
 -----
 
