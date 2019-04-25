@@ -2,10 +2,6 @@
 
 # Web Development
 
-[[toc]]
-
 1. [Javascript](/tutorial/web-development/javascript/)
-
-
 
 [Menu](/menu/)

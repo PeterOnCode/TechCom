@@ -29,7 +29,6 @@ git clone https://github.com/kolaxaisz/vuejs-docs.git
 
 > <https://codesandbox.io/s/github/kolaxaisz/vuejs-docs>
 
-
 ## Introduction
 
 [&#8592; Menu](/menu/)

@@ -1,0 +1,6 @@
+{
+  "watch": ["techcom"],
+  "ext": "ts",
+  "ignore": ["techcom/**/*.spec.ts"],
+  "exec": "node --inspect-brk node_modules/.bin/vuepress dev techcom"
+}

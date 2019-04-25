@@ -44,7 +44,7 @@ features:
 
 ```javascript{4}
 export default {
-  data () {
+  data() {
     return {
       msg: 'Highlighted!'
     }
@@ -68,10 +68,10 @@ This is a tip
 
 [Menu](/menu/)
 
--------------
+---
 
 {{ $site }}
 
--------------
+---
 
 {{ $page }}

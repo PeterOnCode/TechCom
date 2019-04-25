@@ -1,8 +1,3 @@
 # Reference Card
 
-
-[[toc]]
-
-
-
 [Menu](/menu/)

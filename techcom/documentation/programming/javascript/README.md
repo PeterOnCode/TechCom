@@ -1,4 +1,3 @@
 # Documentation - Programming - Javascript
 
-
-[Menu(/menu/)]
+[Menu](/menu/)
