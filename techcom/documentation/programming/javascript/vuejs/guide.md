@@ -141,9 +141,34 @@ The un-minified files are for development, and the minified files are for produc
 
 #### Getting Started
 
+```html
+<!-- development version, includes helpful console warnings -->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+```
+
+```html
+<!-- production version, optimized for size and speed -->
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
+```
+
 #### Declarative Rendering
 
+ Template syntax:
 
+ ```html
+ <div id="app">
+  {{ message }}
+</div>
+ ```
+
+ ```javascript
+ var app = new Vue({
+  el: '#app',
+  data: {
+    message: 'Hello Vue!'
+  }
+})
+ ```
 
 #### Conditionals and Loops
 #### Handling User Input
