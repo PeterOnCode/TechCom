@@ -153,26 +153,159 @@ The un-minified files are for development, and the minified files are for produc
 
 #### Declarative Rendering
 
- Template syntax:
+Template syntax:
 
- ```html
- <div id="app">
-  {{ message }}
+> snippet 1-2 -
+
+```html
+<div id="app">
+{{ message }}
 </div>
- ```
+```
 
- ```javascript
- var app = new Vue({
-  el: '#app',
+```javascript
+var app = new Vue({
+el: '#app',
+data: {
+  message: 'Hello Vue!'
+}
+})
+```
+
+#### Conditionals and Loops
+
+Text interpolation:
+
+> snippet 1-3 -
+
+```html
+<div id="app-2">
+  <span v-bind:title="message">
+    Hover your mouse over me for a few seconds
+    to see my dynamically bound title!
+  </span>
+</div>
+```
+
+```javascript
+var app2 = new Vue({
+  el: '#app-2',
+  data: {
+    message: 'You loaded this page on ' + new Date().toLocaleString()
+  }
+})
+```
+
+The `v-bind` attribute you are seeing is called a __directive__.
+
+_Directives_ are prefixed with `v-` to indicate that they are special attributes provided by Vue, they apply special reactive behavior to the rendered DOM.
+
+The `v-for` directive can be used for displaying a list of items using the data from an Array:
+
+> snippet 1-4 -
+
+```html
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
+```
+
+```javascript
+var app4 = new Vue({
+  el: '#app-4',
+  data: {
+    todos: [
+      { text: 'Learn JavaScript' },
+      { text: 'Learn Vue' },
+      { text: 'Build something awesome' }
+    ]
+  }
+})
+```
+
+#### Handling User Input
+
+To let users interact with your app, we can use the `v-on` directive to attach event listeners that invoke methods on our Vue instances:
+
+> snippet 1-5 -
+
+```html
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">Reverse Message</button>
+</div>
+```
+
+```javascript
+var app5 = new Vue({
+  el: '#app-5',
+  data: {
+    message: 'Hello Vue.js!'
+  },
+  methods: {
+    reverseMessage: function () {
+      this.message = this.message.split('').reverse().join('')
+    }
+  }
+})
+```
+
+Vue also provides the `v-model` directive that makes _two-way binding_ between form input and app state:
+
+> snippet 1-6 -
+
+```html
+<div id="app-6">
+  <p>{{ message }}</p>
+  <input v-model="message">
+</div>
+```
+
+```javascript
+var app6 = new Vue({
+  el: '#app-6',
   data: {
     message: 'Hello Vue!'
   }
 })
- ```
+```
 
-#### Conditionals and Loops
-#### Handling User Input
 #### Composing with Components
+
+The _component system_ is another important concept in Vue, because it’s an abstraction that allows us to build large-scale applications:
+*  composed of small,
+* self-contained,
+* often reusable components.
+
+In Vue, a component is essentially a Vue instance with pre-defined options.
+
+> snippet 1-7 -
+
+```html
+<ol>
+  <!-- Create an instance of the todo-item component -->
+  <todo-item></todo-item>
+</ol>
+```
+
+```javascript
+// Define a new component called todo-item
+Vue.component('todo-item', {
+  template: '<li>This is a todo</li>'
+})
+```
+
+```html
+<ol>
+  <!-- Create an instance of the todo-item component -->
+  <todo-item></todo-item>
+</ol>
+```
+
 ##### Relation to Custom Elements
 #### Ready for More?
 
