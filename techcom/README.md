@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /img/springfield-dim-sum-800px.png
+heroImage: /img/techcom-logo.jpg
 heroText: TechCom
 tagline: Technical Communication
 actionText: Menu →→
