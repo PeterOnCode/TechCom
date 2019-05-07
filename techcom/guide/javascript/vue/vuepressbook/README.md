@@ -36,7 +36,9 @@ features:
 ### Components
 
 1. `<techcom-toc page=$page>`
+    Az összes route lehetőség kibontva.
 1. `<techcom-breadcrumbs page=$page>`
+
 
 ## Samples
 

@@ -8,12 +8,38 @@
 1. sdd
 
 ---
+
 ### Node
+
 1. Nest.js Tutorial: Build your First REST API CRUD App with TypeORM
   <https://www.techiediaries.com/nestjs-tutorial-rest-api-crud/>
   #nestjs
+
 ---
 ### Vue
+
+1. Understanding Vue.js Lifecycle Hooks
+  <https://alligator.io/vuejs/component-lifecycle/>
+  &#187;
+  #vue #vuex
+1. Quick Intro to Vuex ORM
+  <https://vuejsdevelopers.com/2019/04/29/vuex-orm-quick-intro/>
+  &#187;
+  #vue #vuex
+1. WTF is Vuex? A Beginner's Guide To Vue's Application Data Store
+  <https://vuejsdevelopers.com/2017/05/15/vue-js-what-is-vuex/>
+  &#187;
+  #vue
+1. Handling Dialogs with Vue Router
+  <https://dev.to/berniwittmann/handling-dialogs-with-vue-router-29ji>
+  &#187;
+  #vue
+1. Handling Dialogs with Vue Router
+  <>
+  &#187;
+  #vue
+
+
 1. DRY Vue: How to Reuse and Prepopulate Forms
   <https://medium.com/@mntlmaxi/dry-vue-how-to-reuse-and-prepopulate-forms-83068e142c70>
 1. Make Your Vue App Last with Local Storage
@@ -29,7 +55,9 @@
   <https://levelup.gitconnected.com/how-to-use-mixins-in-vuejs-a40cc3fb4428>
 1. Vue PWA Plugin
   <https://medium.com/@mario.brendel1990/vue-pwa-plugin-71b93cae72ec>
-1. 
-
+1. Using Vue in Visual Studio Code
+  <https://code.visualstudio.com/docs/nodejs/vuejs-tutorial>
+  &#187;
+  #vue #visual code
 
 [Menu](/menu/)

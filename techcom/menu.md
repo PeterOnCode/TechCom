@@ -1,6 +1,10 @@
 # Menu of Content
 
-- [Documentation](/documentation/)
+
+<techcom-Menu v-bind:pages="$site.pages" />
+
+
+<!-- - [Documentation](/documentation/)
   - [Programming](/documentation/programming/)
     - [Javascript](/documentation/programming/javascript)
       - [nest](/documentation/programming/javascript/nestjs/)
@@ -22,3 +26,4 @@
   - [Web Development](/tutorial/web-development/)
     - [Javascript](/tutorial/web-development/javascript/)
 - [Post](/post/)
+- [Site](/site/) -->
