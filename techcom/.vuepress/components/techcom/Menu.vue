@@ -1,16 +1,5 @@
 <template>
-  <div class="techcom-menu">
-    <ul>
-      <li v-for="regPath in regularPaths">
-        <a v-bind:href="regPath">{{regPath}}</a>
-      </li>
-      <ul>
-        <li>documentation</li>
-        <ul>
-          <li>programming</li>
-        </ul>
-      </ul>
-    </ul>
+  <div class="techcom-menu" v-html="menuHtml">
     <!-- {{pages}} -->
   </div>
 </template>
@@ -28,7 +17,8 @@ export default {
 
   data: function() {
     return {
-      regularPaths: []
+      regularPaths: [],
+      menuHtml: ""
     };
   },
 
@@ -37,26 +27,29 @@ export default {
   */
   methods: {
     makeUl: function(hierarchy, classname) {
-      console.log(classname);
-
       var dirs = Object.keys(hierarchy);
       var ul = "<ul";
+
       if (classname) {
         ul += ' class="' + classname + '"';
       }
       ul += ">\n";
-      dirs.forEach(function(dir) {
-        var path = hierarchy[dir].path;
-        if (path) {
-          // file
-          ul += '<li class="file" data-url="' + path + '">' + dir + "</li>\n";
-        } else {
-          ul += '<li class="folder">' + dir + "\n";
-          ul += makeUl(hierarchy[dir]);
+
+      let that = this;
+      dirs.forEach(dir => {
+        if (dir === "$page") {
+          return;
+        }
+        let page = hierarchy[dir].$page;
+        if (typeof page !== "undefined") {
+          ul += `<li class="file"><a href="${page.path}">${page.title}</a>\n`;
+          ul += that.makeUl(hierarchy[dir]);
           ul += "</li>\n";
         }
       });
+
       ul += "</ul>\n";
+
       return ul;
     }
   },
@@ -64,31 +57,35 @@ export default {
    Lifecycle Hooks
   */
   created() {
-    // console.log("created()");
-    this.regularPaths = this.pages.map(page => page.regularPath).sort();
+    this.pages = this.pages.sort((p1, p2) =>
+      p1.regularPath.localeCompare(p2.regularPath)
+    );
 
-    //
-    const hierarchy = this.regularPaths.reduce((hier, path) => {
-      let x = hier;
-      path.split("/").forEach(function(item) {
-        if (!x[item]) {
-          x[item] = {};
+    const h = this.pages.reduce((accumulator, currentValue) => {
+      let acc = accumulator;
+      currentValue.regularPath.split("/").forEach(folder => {
+        if (folder.length === 0) {
+          return;
         }
-        x = x[item];
+
+        if (!acc[folder]) {
+          acc[folder] = {};
+        }
+        acc = acc[folder];
       });
-      x.path = path;
-      return hier;
+      acc.$page = currentValue;
+      return accumulator;
     }, {});
 
-    this.makeUl(hierarchy, "base-UL");
-
-    // console.log(`length: ${this.regularPaths.length}`);
+    //
+    const ul = this.makeUl(h, "techcom menu");
+    this.menuHtml = ul;
   }
 };
 </script>
 
 <style lang="stylus">
-.techcom-menu {
+.techcom .menu {
   a {
     color: red;
 
