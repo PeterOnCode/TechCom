@@ -1,7 +1,9 @@
 ---
-title: Coding Problem
+title: Architecture
 ---
 
 # {{$page.title}}
+
+## PlamUML
 
 [Menu](/menu/)

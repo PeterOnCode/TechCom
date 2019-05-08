@@ -1,7 +1,9 @@
-# Documentation - Architecture - UML
+---
+title: Uml - Unified Modeling Language
+---
 
-## PlamUML
+# {{$page.title}}
 
-
+## PlantUML
 
 [Menu](/menu/)

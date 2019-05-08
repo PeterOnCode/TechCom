@@ -1,4 +1,9 @@
-# Documentation
+---
+title: Documentation
+---
+
+# {{$page.title}}
+
 
 ## Javascript
 
