@@ -1,6 +1,9 @@
-[Tutorial](/tutorial/) > Web Development > [Javascript](/tutorial/web-development/javascript/)
+---
+title:  Web Development
 
-# Web Development
+---
+
+# {{$page.title}}
 
 1. [Javascript](/tutorial/web-development/javascript/)
 

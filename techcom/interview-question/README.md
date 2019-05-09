@@ -1,4 +1,8 @@
-# Interview Questions
+---
+title: Interview Questions
+---
+
+# {{ $page.title }}
 
 - Javascript
   - [Angular](/interview-question/javascript/angular/)

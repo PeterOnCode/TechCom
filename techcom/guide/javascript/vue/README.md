@@ -1,4 +1,9 @@
-# Vue Guides
+---
+title:  Vue Guides
+
+---
+
+# {{ $page.title }}
 
 
 ## Articles

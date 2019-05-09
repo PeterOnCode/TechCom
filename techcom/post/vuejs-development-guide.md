@@ -7,6 +7,8 @@ categories: [milk, pumpkin pie, eggs, juice]
 category: Javascript
 ---
 
+# {{ $page.title }}
+
 <div>
   <span v-for="tag in $page.frontmatter.tags">#{{tag}} </span>
 </div>

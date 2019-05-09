@@ -1,4 +1,8 @@
-# Build a Twitter Clone With Adonis and Vue
+---
+title: Build a Twitter Clone With Adonis and Vue
+---
+
+# {{ $page.title }}
 
 - <https://scotch.io/courses/build-a-twitter-clone-with-adonis-and-vue/why-adonis>
 - <https://github.com/PeterOnCode/scotch_io-courses-build-a-twitter-clone-with-adonis-and-vue>

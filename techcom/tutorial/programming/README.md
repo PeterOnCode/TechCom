@@ -1,6 +1,12 @@
+---
+title: Tutorials >>  Programming
+---
+
 [Tutorial](/tutorial/) > Programming > [Java](/tutorial/programming/java/)
 
-# Programming
+# {{$page.title}}
+
+
 
 1. [Programming](/tutorial/programming/)
    1. [Java](/tutorial/programming/java/)

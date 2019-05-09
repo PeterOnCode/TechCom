@@ -1,3 +1,7 @@
-# Angular Interview Questions
+---
+title: Angular Interview Questions
+---
+
+# {{ $page.title }}
 
 [Home](/)

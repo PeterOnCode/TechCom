@@ -1,4 +1,9 @@
-# Documentation - Programming
+---
+title: Programming Documentation
+
+---
+
+# {{ $page.title }}
 
 
-[Menu(/menu/)]
+[Menu](/menu/)

@@ -1,4 +1,9 @@
-# Guides
+---
+title: Guide
+
+---
+
+{{ $page.title }}
 
 ## Javascript
 

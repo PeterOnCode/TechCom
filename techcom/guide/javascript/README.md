@@ -1,4 +1,8 @@
-# Javascript Guides
+---
+title: Javascript Guide
+---
+
+# {{ $page.title }}
 
 ## [Vue](/guide/javascript/vue/)
 
