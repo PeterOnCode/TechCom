@@ -1,17 +1,10 @@
 <template>
-  <div class="techcom-menu" v-html="menuHtml">
-    <!-- {{pages}} -->
-  </div>
+  <div class="techcom-menu" v-html="menuHtml"></div>
 </template>
 
 <script>
-// import SidebarLinks from "@theme/components/SidebarLinks.vue";
-// import NavLinks from "@theme/components/NavLinks.vue";
-
 export default {
   name: "techcom-menu",
-
-  // components: { SidebarLinks, NavLinks },
 
   props: ["pages"],
 
@@ -21,7 +14,6 @@ export default {
       menuHtml: ""
     };
   },
-
   /*
     Methods
   */
@@ -42,7 +34,8 @@ export default {
         }
         let page = hierarchy[dir].$page;
         if (typeof page !== "undefined") {
-          ul += `<li class="file"><a href="${page.path}">${page.title}</a>\n`;
+          const text = page.title ? page.title : "Haha";
+          ul += `<li class="file"><a href="${page.path}">${text}</a>\n`;
           ul += that.makeUl(hierarchy[dir]);
           ul += "</li>\n";
         }

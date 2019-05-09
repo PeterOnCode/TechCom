@@ -1,29 +1,3 @@
 # Menu of Content
 
-
 <techcom-Menu v-bind:pages="$site.pages" />
-
-
-<!-- - [Documentation](/documentation/)
-  - [Programming](/documentation/programming/)
-    - [Javascript](/documentation/programming/javascript)
-      - [nest](/documentation/programming/javascript/nestjs/)
-      - [nuxtjs](/documentation/programming/javascript/nuxtjs/)
-      - [vue](/documentation/programming/javascript/vuejs/)
-        - [Guide](/documentation/programming/javascript/vuejs/guide.md)
-- [Coding Problem](/coding-problem/)
-- [Guide](/guide/)
-  - [Javascript](/guide/javascript/)
-    - [Vue](/guide/javascript/vue/)
-      - [Getting to Know Vue js](/guide/javascript/vue/getting-to-know-vuejs/)
-      - [Learning Vue.js](/guide/javascript/vue/learning-vuejs/)
-      - [The Majesty of Vue.js](/guide/javascript/vue/the-majesty-of-vuejs/)
-      - [Vue js Up and Running](/guide/javascript/vue/vuejs-up-and-running/)
-      - [Vuepressbook](/guide/javascript/vue/vuepressbook/)
-- [Interview Question](/interview-question/)
-- [Reference Card](/reference-card/)
-- [Tutorial](/tutorial/)
-  - [Web Development](/tutorial/web-development/)
-    - [Javascript](/tutorial/web-development/javascript/)
-- [Post](/post/)
-- [Site](/site/) -->
