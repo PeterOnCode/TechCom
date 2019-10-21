@@ -13,7 +13,7 @@
   "devDependencies": {
     "nodemon": "^1.18.11",
     "vuepress": "^1.1.0",
-    "yarn": "^1.15.2"
+    "yarn": "^1.17.3"
   },
   "author": "Peter Bone",
   "license": "ISC",
