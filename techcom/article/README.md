@@ -42,6 +42,7 @@ Article
 1. [Working with models in Angular](https://nehalist.io/working-with-models-in-angular/#butwhydowewantthat)
 1. [How to map REST API data using Decorator pattern in Angular 6](https://blog.usejournal.com/how-to-map-rest-api-data-using-decorator-pattern-in-angular-6-94eb49ba16b1)
 1. [State Management: don’t shoot yourself in the foot before you start an Angular application](https://medium.com/@2muchcoffee/angular-state-management-a-must-have-for-large-scale-angular-apps-8b98e5a761c7)
+1. [Simple state management in Angular with only Services and RxJS](https://dev.to/avatsaev/simple-state-management-in-angular-with-only-services-and-rxjs-41p8)
 
 ### Node
 
