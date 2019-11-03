@@ -1,9 +1,9 @@
 ---
-title: View Interview Questions
+title: Vue Interview Questions
 ---
 
-# {{ $page.titel }}
+# {{ $page.title }}
 
-lkdflk
+1. ee
 
 [Home](/)
