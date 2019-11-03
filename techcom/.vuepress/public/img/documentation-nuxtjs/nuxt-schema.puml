@@ -1,51 +1,97 @@
 @startuml
 
-skinparam backgroundColor black
-skinparam activity {
-  FontSize 12
-  FontName Courier
-  StartColor red
-  BorderColor black
-  BackgroundColor gold
-  ArrowFontName Impact
-  ArrowColor #FF6655
-  ArrowFontColor #777777
-}
+title Nuxt.js called
 
-skinparam note {
-  FontSize 8
-  FontName Normal
-  BorderColor black
-  BackgroundColor DeepSkyBlue
-  ArrowFontName Impact
-  ArrowColor #FF6655
-  ArrowFontColor #777777
-}
 
-(*) --> "Incoming Request"
-    -down-> "nuxtServerInit"
-    note left
-      Store action
-    end note
-    -down-> "middleware"
-    note right
-      1. nuxt.config.js
-      2. matching layout
-      3. matching page & children
-    end note
-    --> "validate()"
-    note right
-      Pages & children
-    end note
-    -down-> "asyncData() & fetch()"
-    note right
-      Pages & children
-    end note
-    -down-> "Render"
-    -up-> "Navigate"
-    note left
-      <nuxt-link>
-    end note
--up-> middleware
+' skinparam backgroundColor black
+' skinparam activity {
+'   FontSize 12
+'   FontName Courier
+'   StartColor red
+'   BorderColor black
+'   BackgroundColor gold
+'   ArrowFontName Impact
+'   ArrowColor #FF6655
+'   ArrowFontColor #777777
+' }
+
+' skinparam note {
+'   FontSize 8
+'   FontName Normal
+'   BorderColor black
+'   BackgroundColor DeepSkyBlue
+'   ArrowFontName Impact
+'   ArrowColor #FF6655
+'   ArrowFontColor #777777
+' }
+
+start
+:Incoming Request;
+:nuxtServerInit;
+note right
+  Store action
+end note
+repeat
+  :middleware;
+  note left
+    1. nuxt.config.js
+    2. matching layout
+    3. matching page & children
+  end note
+  :validate();
+  note right
+    Pages & children
+  end note
+  :asyncData() & fetch();
+  note left
+    Pages & children
+  end note
+  :Render;
+repeat while (Navigate \n <nuxt-link>)
+  
+
+' :This is defined on
+' several **lines**;
+' stop
+' end
+
+
+legend 
+  What is called by Nuxt.js when the server is
+  called or when the user navigates through the
+  app via <nuxt-link>
+' :Incoming Request
+'     -down-> "nuxtServerInit"
+'     note left
+'       Store action
+'     end note
+'     -down-> "middleware"
+'     note right
+'       1. nuxt.config.js
+'       2. matching layout
+'       3. matching page & children
+'     end note
+'     --> "validate()"
+'     note right
+'       Pages & children
+'     end note
+'     -down-> "asyncData() & fetch()"
+'     note right
+'       Pages & children
+'     end note
+'     -down-> "Render"
+'     -up-> "Navigate"
+'     note left
+'       <nuxt-link>
+'     end note
+' -up-> middleware
+' note right
+'   This note is on several
+'   //lines// and can
+'   contain <b>HTML</b>
+'   ====
+'   * Calling the method ""foo()"" is prohibited
+' end note
+end legend
 
 @enduml

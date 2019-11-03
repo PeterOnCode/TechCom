@@ -67,12 +67,15 @@ title: Javascript Web Development
   &#187;
   #vue
 ---
+1. What Hooks Mean for Vue <br>
+  <https://css-tricks.com/what-hooks-mean-for-vue/> <br>
+  Author: Sarah Drasner <br>
 
 #### Videos
 
 1. Vue Conference Videos <br>
 <https://www.vuemastery.com/conferences>
 
+---
 
-
-[Menu](/menu/)
+[&#171; foxMenu](/menu/)

@@ -27,6 +27,7 @@ module.exports = {
   themeConfig: {
     sidebar: [
       ['/','[Home]'],
+      ['/article/','Article'],
       ['/documentation/','Documentation'],
       ['/guide/', 'Guide'],
       ['/interview-question/', 'Interview Question'],
